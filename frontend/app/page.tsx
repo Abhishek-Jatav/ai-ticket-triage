@@ -7,7 +7,7 @@ import ResultPanel from "./components/ResultPanel";
 import TicketTable from "./components/TicketTable";
 import Loader from "./components/Loader";
 import ErrorMessage from "./components/ErrorMessage";
-import { analyzeTicket, getTickets, AnalyzeResponse } from "./services/api";
+import { analyzeTicket, getTickets, AnalyzeResponse } from "../services/api";
 
 export default function Home() {
   const [result, setResult] = useState<AnalyzeResponse | null>(null);

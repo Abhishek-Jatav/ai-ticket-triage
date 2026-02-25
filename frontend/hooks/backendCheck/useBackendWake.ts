@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { BACKEND_URL } from "../../../app/services/env";
+import { BACKEND_URL } from "../../services/env";
 
 export function useBackendWake() {
   const [serverAwake, setServerAwake] = useState(false);

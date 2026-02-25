@@ -1,6 +1,6 @@
 "use client";
 
-import { AnalyzeResponse } from "../services/api";
+import { AnalyzeResponse } from "../../services/api";
 
 interface Props {
   result: AnalyzeResponse | null;
