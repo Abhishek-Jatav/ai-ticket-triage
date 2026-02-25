@@ -12,7 +12,7 @@ async function bootstrap() {
     configService.get<string>('FRONTEND_URL')?.split(',') || [];
 
   app.enableCors({
-    origin: allowedOrigins,
+    origin: allowedOrigins.length ? allowedOrigins : true,
     credentials: true,
   });
 
@@ -23,6 +23,9 @@ async function bootstrap() {
     }),
   );
 
-  await app.listen(configService.get<number>('PORT') || 3001);
+  const port = process.env.PORT || 3001;
+  await app.listen(port);
+
+  console.log(`🚀 Server running on port ${port}`);
 }
 bootstrap();
