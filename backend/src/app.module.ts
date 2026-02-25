@@ -13,9 +13,7 @@ import { AppController } from './app.controller';
     MongooseModule.forRootAsync({
       inject: [ConfigService],
       useFactory: async (configService: ConfigService) => ({
-        uri:
-          configService.get<string>('MONGO_URI') ||
-          'mongodb://localhost:27017/ai_ticket_triage',
+        uri: configService.get<string>('MONGO_URI'),
       }),
     }),
 

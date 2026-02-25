@@ -189,9 +189,8 @@ docker-compose up --build
 
 ### 🧩 Services
 
-* 🌐 Frontend → [http://localhost:3000](http://localhost:3000)
-* ⚙ Backend → [http://localhost:3001](http://localhost:3001)
-* 🗄 MongoDB → Port 27017
+* 🌐 Frontend → [https://ai-ticket-triage-abhishek-jatav.onrender.com](https://ai-ticket-triage-abhishek-jatav.onrender.com)
+* ⚙ Backend → [https://ai-ticket-triage.onrender.com](https://ai-ticket-triage.onrender.com)
 
 ---
 
