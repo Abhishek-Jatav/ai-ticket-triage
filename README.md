@@ -26,7 +26,8 @@ npm run start:dev
 ```
 
 Runs on:
-👉 [http://localhost:3001](http://localhost:3001)
+👉 [http://localhost:3001](http://localhost:3000)
+👉 [https://ai-ticket-triage.onrender.com](https://ai-ticket-triage.onrender.com)
 
 ---
 
@@ -39,7 +40,8 @@ npm run dev
 ```
 
 Runs on:
-👉 [http://localhost:3000](http://localhost:3000)
+👉 [http://localhost:3000](http://localhost:3001)
+👉 [https://ai-ticket-triage-abhishek-jatav.netlify.app](https://ai-ticket-triage-abhishek-jatav.netlify.app)
 
 ---
 
@@ -191,6 +193,11 @@ docker-compose up --build
 
 * 🌐 Frontend → [https://ai-ticket-triage-abhishek-jatav.netlify.app](https://ai-ticket-triage-abhishek-jatav.netlify.app)
 * ⚙ Backend → [https://ai-ticket-triage.onrender.com](https://ai-ticket-triage.onrender.com)
+* ⚙ Reposotory → [https://github.com/Abhishek-Jatav/ai-ticket-triage](https://github.com/Abhishek-Jatav/ai-ticket-triage)
+* ⚙ Demo video → [https://drive.google.com/file/d/1IOhbkbEyxfe4yB8nb-ALyKTgSMFZU3hW/view?usp=sharing](https://drive.google.com/file/d/1IOhbkbEyxfe4yB8nb-ALyKTgSMFZU3hW/view?usp=sharing)
+
+
+
 
 ---
 
