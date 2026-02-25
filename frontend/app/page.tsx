@@ -48,12 +48,13 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-6 sm:p-10">
+    <main className="min-h-screen bg-gradient-to-br from-[#0f172a] via-[#111827] to-[#020617] text-gray-200 p-6 sm:p-10">
       <Toaster position="top-right" />
 
       <div className="max-w-5xl mx-auto">
-        <div className="flex flex-col sm:flex-row justify-between items-center mb-10 gap-4">
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-800">
+        {/* Header */}
+        <div className="flex flex-col sm:flex-row justify-between items-center mb-12 gap-6">
+          <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent">
             AI Ticket Triage
           </h1>
 
@@ -61,19 +62,24 @@ export default function Home() {
             href="https://nexabuild-abhishek-jatav.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 bg-black hover:bg-gray-800 text-white font-semibold rounded-xl transition shadow-lg">
+            className="px-6 py-3 bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-500 hover:to-blue-500 text-white font-semibold rounded-2xl transition-all duration-300 shadow-xl hover:scale-105">
             See My Portfolio
           </a>
         </div>
 
+        {/* Error */}
         <ErrorMessage message={error} />
 
+        {/* Ticket Form */}
         <TicketForm onSubmit={handleSubmit} loading={loading} />
 
+        {/* Loader */}
         {loading && <Loader />}
 
+        {/* Result Panel */}
         <ResultPanel result={result} />
 
+        {/* Ticket Table */}
         <TicketTable tickets={tickets} />
       </div>
     </main>

@@ -7,7 +7,7 @@ export class AppController {
     return 'AI Ticket Triage API is running 🚀';
   }
 
-  @Get('health')
+  @Get('ping')
   getHealth(): object {
     return {
       status: 'ok',
