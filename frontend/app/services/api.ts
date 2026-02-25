@@ -1,4 +1,4 @@
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
+import { BACKEND_URL } from "./env";
 
 export interface AnalyzeResponse {
   category: string;
@@ -9,7 +9,7 @@ export interface AnalyzeResponse {
 }
 
 export async function analyzeTicket(message: string): Promise<AnalyzeResponse> {
-  const response = await fetch(`${BASE_URL}/tickets/analyze`, {
+  const response = await fetch(`${BACKEND_URL}/tickets/analyze`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -30,7 +30,7 @@ export async function analyzeTicket(message: string): Promise<AnalyzeResponse> {
 }
 
 export async function getTickets() {
-  const response = await fetch(`${BASE_URL}/tickets`);
+  const response = await fetch(`${BACKEND_URL}/tickets`);
 
   if (!response.ok) {
     throw new Error("Failed to fetch tickets");
