@@ -189,7 +189,7 @@ docker-compose up --build
 
 ### 🧩 Services
 
-* 🌐 Frontend → [https://ai-ticket-triage-abhishek-jatav.onrender.com](https://ai-ticket-triage-abhishek-jatav.onrender.com)
+* 🌐 Frontend → [https://ai-ticket-triage-abhishek-jatav.netlify.app](https://ai-ticket-triage-abhishek-jatav.netlify.app)
 * ⚙ Backend → [https://ai-ticket-triage.onrender.com](https://ai-ticket-triage.onrender.com)
 
 ---
