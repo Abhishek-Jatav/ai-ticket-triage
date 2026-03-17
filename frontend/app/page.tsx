@@ -7,6 +7,7 @@ import ResultPanel from "./components/ResultPanel";
 import TicketTable from "./components/TicketTable";
 import Loader from "./components/Loader";
 import ErrorMessage from "./components/ErrorMessage";
+import PortfolioButton from "./components/PortfolioButton";
 import { analyzeTicket, getTickets, AnalyzeResponse } from "../services/api";
 
 export default function Home() {
@@ -58,13 +59,9 @@ export default function Home() {
             AI Ticket Triage
           </h1>
 
-          <a
-            href="https://nexabuild-abhishek-jatav.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-500 hover:to-blue-500 text-white font-semibold rounded-2xl transition-all duration-300 shadow-xl hover:scale-105">
-            See My Portfolio
-          </a>
+          <div className="flex justify-center sm:justify-end">
+            <PortfolioButton />
+          </div>
         </div>
 
         {/* Error */}
