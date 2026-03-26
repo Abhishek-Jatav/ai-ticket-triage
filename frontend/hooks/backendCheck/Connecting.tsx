@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import ReactionTestGame from "./game/reactionTest/reactionTestGame";
-import DinoGame from "./game/dinosaurgame/DinoGame";
 
 export default function Connecting({ error }: { error: string | null }) {
   const [dots, setDots] = useState<string>("");
